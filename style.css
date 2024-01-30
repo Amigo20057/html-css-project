@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(152,152,152,1) 100%);
+    background-position:center;
+    background-size: cover;
+}
+
+.header-bar{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 119px;
+    padding: 0 150px;
+}
+
+.logo{
+    margin: 0 15px;
+}
+
+.logo img{
+    cursor: pointer;
+}
+
+.navigator{
+    margin: 0 15px;
+}
+
+.navigator ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 18px;
+    /* padding: 30px 0; */
+}
+
+.ti-angle-down{
+    font-size: 11px;
+    position: relative;
+    top: -3px;
+}
+
+.ti-angle-down::before{
+    content: "\e64b";
+}
+
+
+.navigator ul li a, .buy-tickets a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: all .25s;
+}
+
+.navigator ul li a:hover{
+    color: red;
+}
+
+.buy-tickets{
+    background: #FF4533;
+    padding: 12px 46px;
+    transition: all .50s;
+    cursor: pointer;
+
+}
+
+.buy-tickets:hover {
+    color: #FF4533;
+    background: none;
+    box-shadow: 0 0 0 1px #FF4533 inset;
+}
+
+
+.center-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 100%; */
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* background-color: red; */
+    margin: 0 70.500px;
+    padding: 0 15px;
+    margin-top: 120px;
+    z-index: 5;
+}
+
+.center-text-bar{
+    position: relative;
+}
+
+.data span{
+    color: red;
+    font-size: 30px;
+}
+
+.content h3{
+    font-family: "Monoton", sans-serif;
+    color: #fff;
+    font-size: 122px;
+    margin: 55px 0 40px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+.position p{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 34px;
+    margin-top: 10px;
+    font-family: "Anton", sans-serif;
+}
+
+.img{
+    position: absolute;
+    width: 100vh;
+    height: 500px;
+    z-index: -1;
+}
+
+.img-left img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translate(-150px, -125px);
+}
+
+.img-right img{
+    position: absolute;
+    z-index: 1;
+    width: 259px;
+    transform: translate(680px, 70px);
+}
+
+.main{
+    background-color: black;
+    padding-top: 135px;
+    padding-bottom: 63px;
+}
+
+.container{
+    max-width: 1140px;
+}
+
+.main-head-content{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 190px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mb-8{
+    margin-bottom: 80px;
+}
+
+.Performer{
+    visibility: visible;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-name: fadeInRight;
+    color: #fff;
+}
+
+.Performer{
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 999;
+    padding-bottom: 7px;
+    padding: 0 0 7px;
+    margin: 0 0 8px;
+}
+
+main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: black;
+    display: flex;
+}
+
+.main-text-bar{
+    display: flex;
+    position: relative;
+}
+
+.main-text-bar h3{
+    color: white;
+    font-size: 80px;
+    margin-left: 170px;
+    margin-top: 138px;
+}
+
+.main-center-content{
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 60px;
+    height: 145vh;
+    width: 800px;
+    margin-left: -150px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: -60px;
+}
+
+.drum{
+    width: 270px;
+    height: 400px;
+    /* background-color: yellow; */
+    margin-top: 25px;
+    display: flex;
+    flex-direction:column
+}
+
+.drum-text{
+    width: 100%;
+    height: 70px;
+    /* background-color: blue; */
+}
+
+
+.drum-img{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    /* background-color: green; */
+}
+
+.drum-img:hover{
+    transform: scale(0.90);
+}
+
+.drum-1 .drum-img{
+    background-image: url(https://technext.github.io/eventcon/img/performer/1.png);
+    background-size: cover;
+}
+
+.drum-2 .drum-img{
+    background-image: url(https://technext.github.io/eventcon/img/performer/2.png);
+    background-size: cover;
+}
+
+.drum-3 .drum-img{
+    background-image: url(https://technext.github.io/eventcon/img/performer/3.png);
+    background-size: cover;
+}
+
+.drum-4 .drum-img{
+    background-image: url(https://technext.github.io/eventcon/img/performer/4.png);
+    background-size: cover;
+}
+
+.drum-text h4{
+    color: #fff;
+    font-size: 25px;
+}
+
+.drum-text span{
+    font-size: 17px;
+    color: red;
+}
+
+.about{
+    background-color: black;
+    height: 255px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about-content{
+    text-align: center!important;
+}
+
+.about h3{
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 7px;
+}
+
+.about p{
+    font-size: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: #AAB1B7;
+    line-height: 32px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: "Muli", sans-serif;
+}
+
+.img-and-text-content{
+    margin-left: 180px;
+    width: 1140px;
+    height: 468px;
+    /* background-color: red; */
+    display: flex;
+    
+}
+
+.body-img-text-content{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-2{
+    height: 444px;
+    width: 635px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background-color: blue; */
+    background-image: url(https://technext.github.io/eventcon/img/about/about.png);
+    background-size: cover;
+}
+
+.text-content {
+    /* background-color: green; */
+    width: 505px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.text-content h4 {
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FF4533;
+    display: block; 
+}
+
+.text-content p {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    display: block; 
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #AAB1B7;
+    font-size: 20px;
+}
+
+.button-buy-tickets{
+    /* background-color: red; */
+    height: 100px;
+    width: 170px;
+    margin-top: 300px;
+    margin-right: 200px;
+    position: absolute;
+    margin-left: 760px;
+}
